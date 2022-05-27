@@ -1,0 +1,17 @@
+2. Results for extraLargeArray
+insert: 849.8002ms
+append: 3.1532ms
+
+3.
+tinyArray- insert:35.8mu append:77.9mu
+smallArray- insert:46.3mu append:93.3mu
+mediumArray- insert:185.4mu append:141.4mu
+largeArray- insert:8.8891ms append:666.4mu
+extraLargeArray- insert:852.6108ms append:3.1962ms
+
+Other answers are in write-code.js
+
+
+4. the append method that used .push > .unshift was much faster with larger arrays. .push is much quicker when scaling up when .unshift is faster for smallArrays
+
+Extra Credit- .push scales better because it always runs the same speed (follows same path) regardless of the size of what ever it is youre running.
